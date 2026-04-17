@@ -251,3 +251,21 @@ body::before {
   filter: none;
   transform: translateY(-4px) scale(1.1);
 }
+.info {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.info p {
+  max-width: 800px;
+  margin: 10px auto;
+  color: #94a3b8;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
