@@ -47,7 +47,7 @@ nav a:hover {
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,24 +153,6 @@ button:hover {
   gap: 12px;
 }
 
-.nav-btn {
-  padding: 8px 16px;
-  background: rgba(56, 189, 248, 0.15);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  border-radius: 10px;
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s ease;
-}
-
-/* hover effect */
-.nav-btn:hover {
-  background: #38bdf8;
-  color: #0b1220;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.25);
-}
 /* ===== ANIMATED BACKGROUND ===== */
 
 body::before {
@@ -385,9 +367,14 @@ img {
   margin-left: 15px;
   text-decoration: none;
   color: white;
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 12px 16px;
+  border-radius: 8px;
   transition: 0.3s;
+  background: rgba(56, 189, 248, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.18);
+  border: 1px solid #38bdf8;
+  line-height: 1.1;
 }
 
 .nav-links a:hover {
@@ -407,4 +394,36 @@ img {
 .contact-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* CONTACT ME BUTTON — SAME BORDER STYLE AS OTHER NAV BUTTONS */
+
+.contact-btn {
+  text-decoration: none;
+  color: white !important;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-left: 10px;
+  display: inline-block;
+  font-weight: 600;
+  transition: 0.3s;
+
+  /* THIS ADDS THE BORDER */
+  border: 1px solid #38bdf8;
+
+  /* SAME BACKGROUND STYLE */
+  background: rgba(56, 189, 248, 0.08);
+
+  /* SOFT GLOW */
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.08);
+}
+
+/* HOVER EFFECT */
+
+.contact-btn:hover {
+  background: rgba(56, 189, 248, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.18);
 }

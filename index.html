@@ -16,19 +16,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <div class="logo">
         <img src="bing_4946000.png" alt="Logo" />
-        <span>Danish Iqbal</span>
+        <h3>My Portfolio</h3>
       </div>
+
       <div class="nav-links">
-        <a href="#home" class="nav-btn">Home</a>
-        <a href="#about" class="nav-btn">About</a>
-        <a href="#projects" class="nav-btn">Projects</a>
-        <a href="#contact" class="nav-btn">Contact Me</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="contact-btn">Contact Me</a>
+        <a href="Front Page.pdf" download class="btn">Download CV</a>
+        <button onclick="toggleTheme()">🌓</button>
       </div>
-      <a href="Front Page.pdf" download class="btn">Download CV</a>
-      <button onclick="toggleTheme()">🌓</button>
     </nav>
 
     <section id="home" class="hero">
@@ -40,7 +41,7 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
       <section class="info">
         <h2>About This Portfolio</h2>
 
@@ -52,12 +53,35 @@
 
         <p>
           Here you can explore my work, learn about my skills, and view projects
-          I have built using HTML, CSS, and JavaScript.
+          I have built using HTML, CSS, and JavaScript. I am a passionate web
+          developer focused on building modern, responsive, and user-friendly
+          websites.My goal is to improve my frontend development skills and
+          build real-world projects that solve problems and enhance user
+          experience.
         </p>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+
+        <div class="skill">
+          <p>HTML</p>
+          <div class="bar"><div class="fill" style="width: 95%"></div></div>
+        </div>
+
+        <div class="skill">
+          <p>CSS</p>
+          <div class="bar"><div class="fill" style="width: 90%"></div></div>
+        </div>
+
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="bar"><div class="fill" style="width: 80%"></div></div>
+        </div>
       </section>
     </section>
 
-    <section id="projects" class="grid">
+    <section id="projects" class="projects">
       <div class="grid">
         <div class="card">
           <h3>Portfolio System</h3>
